@@ -219,3 +219,127 @@
 
 for i in range(1,20):
     print(i)
+    
+
+
+
+
+# 1. 1 se 10 print
+for i in range(1, 11):
+    print(i)
+
+# 2. Even numbers 1–20
+for i in range(2, 21, 2):
+    print(i)
+
+# 3. Odd numbers 1–10
+for i in range(1, 11, 2):
+    print(i)
+
+# 4. Table of 5
+for i in range(1, 11):
+    print(5 * i)
+
+# 5. Print list elements
+lst = [10, 20, 30]
+for i in lst:
+    print(i)
+
+# 6. Print string characters
+for ch in "Python":
+    print(ch)
+
+# 7. Sum 1–100
+s = 0
+for i in range(1, 101):
+    s += i
+print(s)
+
+# 8. Count digits (for)
+n = 12345
+c = 0
+for _ in str(n):
+    c += 1
+print(c)
+
+# 9. Factorial
+n = 5
+f = 1
+for i in range(1, n+1):
+    f *= i
+print(f)
+
+# 10. Reverse string
+s = "hello"
+r = ""
+for i in s:
+    r = i + r
+print(r)
+
+# 11. 1–10 (while)
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+# 12. Even till 20 (while)
+i = 2
+while i <= 20:
+    print(i)
+    i += 2
+
+# 13. Sum of digits
+n = 123
+s = 0
+while n > 0:
+    s += n % 10
+    n //= 10
+print(s)
+
+# 14. Reverse number
+n = 123
+r = 0
+while n > 0:
+    r = r * 10 + n % 10
+    n //= 10
+print(r)
+
+# 15. Palindrome check
+n = 121
+t = n
+r = 0
+while n > 0:
+    r = r * 10 + n % 10
+    n //= 10
+print("Palindrome" if t == r else "Not Palindrome")
+
+# 16. Table of any number
+n = 7
+i = 1
+while i <= 10:
+    print(n * i)
+    i += 1
+
+# 17. Count digits (while)
+n = 4567
+c = 0
+while n > 0:
+    c += 1
+    n //= 10
+print(c)
+
+# 18. Star pattern
+for i in range(1, 5):
+    print("*" * i)
+
+# 19. break example
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+
+# 20. continue example
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
